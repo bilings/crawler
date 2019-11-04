@@ -1,0 +1,10 @@
+server:
+  port: 9090
+spring:
+  application:
+        name: service
+  profiles:
+    active: dev
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

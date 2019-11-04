@@ -1,0 +1,47 @@
+html{
+    background-image: url(../other/img/back.jpg);
+    background-position: bottom;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: #286cad;
+    background-size: 100% 100%;
+}
+body {
+    line-height: 24px;
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+}
+.login{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 180px 0;
+    box-sizing: border-box;
+}
+.login-main{
+    width: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.login-header{
+    text-align: center;
+    padding: 20px;
+}
+.login-header p{
+    font-weight: 300;
+    color: #999;
+}
+.login-header h1{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+.login-body{
+    padding: 20px;
+}
+.login-err{
+    color: #FD482C;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}

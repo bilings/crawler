@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="/main/manage.css"/>
+</head>
+<body>
+<div class="layui-header">
+    <div class="layui-logo">数据控制台</div>
+    <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item">
+            <a id="user_msg">个人中心</a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="#"><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+            <dl class="layui-nav-child">
+                <dd><a id="accounts_msg" >公众号管理</a></dd>
+                <dd><a id="updata_msg" >修改信息</a></dd>
+                <dd><a href="/login/logout" >退了</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+<div class="layui-side layui-bg-black" style="top: 60px">
+    <div class="layui-side-scroll" >
+        <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px;">
+            <li class="layui-nav-item layui-nav-itemed">
+                <a href="javascript:;">系统管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;" data-url="/user/info" data-layId="s1">用户管理</a></dd>
+                    <dd><a href="javascript:;" data-url="/role/info" data-layId="s2">角色管理</a></dd>
+                    <dd><a href="javascript:;" data-url="/ss/gg" data-layId="s3">选项三</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">数据管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;" data-url="/ss/gg" data-layId="s1">选项一</a></dd>
+                    <dd><a href="javascript:;" data-url="/ss/gg" data-layId="s2">选项二</a></dd>
+                    <dd><a href="javascript:;" data-url="/ss/gg" data-layId="s3">选项三</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="layui-body">
+    <div class="layui-tab layui-tab-brief" lay-filter="tabs" lay-allowClose="true">
+        <ul class="layui-tab-title" >
+            <li class="layui-this">首页</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/other/jquery.js"></script>
+<script type="text/javascript" src="/layui/layui.js"></script>
+<script type="text/javascript" src="/main/manage.js"></script>
+</body>
+</html>

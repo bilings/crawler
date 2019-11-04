@@ -1,0 +1,35 @@
+spring:
+  data:
+    mongodb:
+      database: basic
+      host: 192.168.4.106
+      port: 27017
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.5.246:3306/test?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: hifo123456
+#  redis:
+ #   database: 0
+ #   host: 192.168.5.128
+#    port: 6379
+#    password: 123456
+ #   timeout: 60000
+
+  resources:
+    static-locations: classpath:/static/
+  freemarker:
+    request-context-attribute: req  #req访问request
+    suffix: .html  #后缀名
+    content-type: text/html
+    enabled: true
+    cache: false #缓存配置
+    template-loader-path: classpath:/templates/ #模板加载路径 按需配置
+    charset: UTF-8 #编码格式
+
+
+mybatis:
+  type-aliases-package: com.crawler.web.entity
+  #mapper-locations: classpath*:mapper/xml/*.xml
+  mapper-locations: classpath*:com/crawler/web/mapper/xml/*.xml
